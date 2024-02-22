@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+    /* min-height: 100vh; */
+    /* background: linear-gradient(#00c6ff, #062950); */
+    background: #c6c9cc;
+    font-family: "Raleway", sans-serif;
+}
+.container{
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:  0 12px 28px rgba(0, 0, 0, 0.16);
+    display: none;
+    margin-top: 20px;  
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 32%;
+    height: 75vh;
+}
+.post header{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+.post form{
+    margin: 20px 25px;
+}
+.post form :where(.contant, .detail .privacy){
+     display: flex;
+     align-items: center;
+}
+.post form .contant img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post form .contant .detail{
+  margin: -3px 0 0 12px;
+}
+.post .contant .detail p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.post  .contant .detail .privacy{
+    margin-top: 5px;
+    max-width: 98px;
+    font-size: 11px;
+    background: #e4e6eb;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.detail .privacy span{
+    font-size: 13px;
+    margin-top: 1px;
+    font-weight: 500;
+}
+.detail .privacy i:last-child{
+    font-size: 13px;
+    margin-left: 1px;
+}
+.post form :where(textarea, button){
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.post form textarea{
+    resize: none;
+    margin-top: 30px;
+    min-height: 100px;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif
+}
+.post form :where(.emoji, .opt){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .emoji img{
+    cursor: pointer;
+}
+form .emoji img:last-child{
+    max-width: 24px;
+}
+form .opt{
+    border: 1px solid #b9b9b9;
+    height: 56px;
+    border-radius: 7px;
+    padding: 0 15px;
+    margin: 15px 0;
+}
+form .opt p{
+    color: #595959;
+    font-size: 16px;
+    font-weight: 500;
+}
+form .opt :where(.list, li){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .opt .list li{
+    height: 43px;
+    list-style: none;
+    width: 43px;
+    border-radius: 50%;
+}
+.opt .list li:hover{
+    background-color: #f0f1f4;
+}
+.opt .list li img{
+    cursor: pointer;
+    width: 23px;
+}
+form button{
+    height: 53px;
+    font-size: 18px;
+    border-radius: 7px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #bcc0c4;
+    background: #e2e5e9;
+    cursor: not-allowed;
+}
+form textarea:valid ~button{
+    color: #fff;
+    background-color: #4599ff;
+    cursor: pointer;
+}
+.container .span{
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    margin-top: 10px;
+    font-size: 30px;
+    /* color: #ffff; */
+    color: black;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.main{
+    height: auto;
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:  0 12px 28px rgba(0, 0, 0, 0.16);
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    margin-left: 32%;
+    margin-bottom: 5px;
+}
+/* .main .my-post{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+    margin: 10px 0;
+} */
+.main .post-top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.main .my-post .post-top{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+}
+.main .my-post .post-top .input p{
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    border: 0;
+    outline: none;
+    background: #efefef;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main .my-post .post-top .input p:hover{
+    background: #e3e3e3;
+    cursor: pointer;
+}
+.main .my-post hr{
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    border: 0;
+    margin: 10px 0;
+}
+.main .my-post .post-bottom{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px auto;
+}
+.main .my-post .post-bottom .post-icon{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-family: "Raleway", sans-serif;
+}
+.main .my-post .post-bottom .post-icon:hover{
+    background: #efefef;
+    border-radius: 8px;
+}
+.main .my-post .post-bottom .post-icon i{
+    font-size: 23px;
+    margin-right: 8px;
+}
+
+.main2{
+    height: 30vh;
+    width: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:  0 12px 28px rgba(0, 0, 0, 0.16);
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    margin-left: 32%;
+    display: none;
+    /* flex-direction: column ; */
+}
+.main2 .post-top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.main2 .my-post .post-top{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+}
+.main2 .my-post .post-top .input p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.main2 .input span{
+    /* margin-top: 5px; */
+    max-width: 98px;
+    font-size: 11px;
+    /* background: #e4e6eb; */
+    /* border-radius: 5px; */
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #aaacaf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main2 .opt :where(.list2, li){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 380%;
+    gap: 10px;
+    color: #aaacaf;
+}
+.main2 .input i:last-child{
+    font-size: 13px;
+}
+.main2 .opt .list li{
+    height: 43px;
+    list-style: none;
+    width: 43px;
+    border-radius: 80%;
+    /* margin-left: 990%; */
+}
+.main2 .opt .list2 li img{
+    cursor: pointer;
+    width: 23px;
+}
+.main2 #close{
+    cursor: pointer;
+    font-size: 27px;
+}
+.main2 .my-post .post-bottom2{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    /* margin: 5px auto; */
+}
+.main2 .my-post .post-bottom2 .post-icon2{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px 15px;
+    font-family: "Raleway", sans-serif;
+}
+.main2 .post-icon2{
+    width: 100%;
+    height: 40%;
+    padding: 15px;
+}
+.main2 .post-icon2 p{
+    margin-left: 15px;
+}
+/* .main2 .my-post hr{
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    border: 0;
+    margin: 10px 0;
+} */
+.main2 .my-post .post-bottom{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px auto;
+    border-top: 1px solid #BCC0C4;
+    border-bottom: 1px solid #BCC0C4;
+    padding: 10px;
+}
+.main2 .my-post .post-bottom .post-icon{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-family: "Raleway", sans-serif;
+}
+.main2 .my-post .post-bottom .post-icon:hover{
+    background: #efefef;
+    border-radius: 8px;
+}
+.main2 .my-post .post-bottom .post-icon i{
+    font-size: 23px;
+    margin-right: 8px;
+}
+.main2 .my-post .hr3{
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    border: 0;
+    /* margin: 10px 0; */
+}

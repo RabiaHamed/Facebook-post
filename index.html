@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Grape+Nuts&family=Jost:ital,wght@1,500&family=Lemon&family=Miltonian+Tattoo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Facebook Psot</title>
+</head>
+<body>
+    
+  <div class="container" id="container">
+    <div class="wrapper">
+        <section class="post">
+        <header>Create Post</header>
+        <form action="#">
+            <div class="contant">
+            <img src="img/db53a4c2-ebe5-455a-aaad-f0eeb2ffb54e.jpeg" >
+            <div class="detail">
+           <p>Rabia Hameed</p>
+           <div class="privacy">
+            <!-- <i class="fa-solid fa-users"></i> -->
+            <i class="fa-solid fa-user-group"></i>
+            <span>Friends</span>
+            <i class="fa-solid fa-caret-down"></i>
+           </div>
+            </div>
+        </div>
+        <textarea placeholder="What's on your mind, Rabia Hameed?" required  id="text"  oninput="getValue()"></textarea>
+        <div class="emoji">
+            <img src="">
+            <img src="img/smile.svg">
+        </div>
+        <div class="opt">
+       <p>Add Your Post</p>
+       <ul class="list">
+         <li><img src="img/gallery.svg"></li>
+         <li><img src="img/tag.svg"></li>
+         <li><img src="img/emoji.svg"></li>
+         <li><img src="img/mic.svg"></li>
+         <li><img src="img/more.svg"></li>
+       </ul>
+        </div>
+        <button id="btn" onclick="getElement()">Post</button>
+        </form>
+        </section>
+    </div>
+    <span onclick="closePic()" class="span">X</span>
+  </div>
+
+<!-- --------------------------------------------------------------------------------------------------------- -->
+    <div class="main" id="main">
+
+<div class="my-post">
+  <div class="post-top">
+    <img src="img/db53a4c2-ebe5-455a-aaad-f0eeb2ffb54e.jpeg" alt="">
+    <!-- <input type="text" placeholder="What's on your mind, Rabia Hameed?"> -->
+    <div class="input" id="input"  onclick="yourPost()">
+      <p>What's on your mind, Rabia Hameed?</p>
+    </div>
+  </div>
+  <hr>
+  <div class="post-bottom">
+    <div class="post-icon">
+      <i class="fa-solid fa-video" style="color: #ce1212;"></i>
+      <p>Live video</p>
+    </div>
+    <div class="post-icon">
+      <img src="img/gallery.svg" alt="">
+      <p>Photo/video</p>
+    </div>
+    <div class="post-icon">
+      <i class="fa-regular fa-face-laugh-beam" style="color: #FFD43B;"></i>
+      <p>Feeling/activity</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- -------------------------------- -->
+<div class="main2" id="box">
+<div class="my-post" id="post">
+  <div class="post-top">
+    <img src="img/db53a4c2-ebe5-455a-aaad-f0eeb2ffb54e.jpeg" alt="">
+    <div class="input" id="input"  onclick="yourPost()">
+      <p>Rabia Hameed</p>
+      <span>Just Now
+      <i class="fa-solid fa-earth-americas"></i></span>
+    </div>
+    <div class="opt">
+      <ul class="list2">
+        <li><img src="img/more.svg"></li>
+    <i class="fa-solid fa-xmark"  id="close" onclick="close()"></i>
+      </ul>
+      </div>
+  </div>
+  
+  <div class="post-bottom2">
+    <div class="post-icon2">
+      <p id="para"></p>
+    </div>
+  </div>
+  <div class="post-bottom">
+    <div class="post-icon">
+      <i class="fa-regular fa-thumbs-up"></i>
+      <p>Like</p>
+    </div>
+    <div class="post-icon">
+      <i class="fa-regular fa-comment fa-flip-horizontal"></i>
+      <p>Comment</p>
+    </div>
+    <div class="post-icon">
+      <i class="fa-solid fa-share"></i>
+      <p>Share</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+    <script src="code.js"></script>
+</body>
+</html>
